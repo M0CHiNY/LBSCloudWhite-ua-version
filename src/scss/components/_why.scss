@@ -1,0 +1,44 @@
+.why {
+  padding-top: 110px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__box {
+    display: flex;
+    @include _1024 {
+      display: block;
+    }
+  }
+
+  &__pre-title {
+    @include Intro-400;
+    margin-bottom: 30px;
+    @include _1024 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    max-width: 315px;
+
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text-box {
+    
+    max-width: 673px;
+    margin-left: 83px;
+    @include _1024 {
+      margin-left: 0;
+    }
+    p {
+      background-color: #fff;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}

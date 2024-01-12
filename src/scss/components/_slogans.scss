@@ -1,0 +1,63 @@
+.slogans {
+  padding-top: 52px;
+
+  @include _1024 {
+    padding-top: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    max-width: 366px;
+    width: 100%;
+  }
+
+  &__figure {
+    margin: 0 auto 15px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__center-img {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    z-index: 1;
+    top: 15%;
+    right: 30%;
+  }
+
+  &__card-strong {
+    @include Intro-400;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+  }
+
+  &--custom {
+    .slogans__list {
+      gap: 28px 55px;
+    }
+    .slogans__box {
+      max-width: 247px;
+    }
+  }
+}
+

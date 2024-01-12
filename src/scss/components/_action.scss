@@ -1,0 +1,132 @@
+.action {
+  padding-top: 110px;
+  padding-bottom: 98px;
+  position: relative;
+  z-index: 3;
+  @include _1024 {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  @include _540 {
+    padding-top: 70px;
+  }
+  
+  &__inner {
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #275af3 0%, #1523b7 100%);
+    padding: 44px 50px 24px 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      top: -20%;
+      left: 5%;
+      background-image: url("../images/detail/pentagon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      @include _767 {
+        top: -15%;
+      }
+      @include _540 {
+        transform: scale(0.5);
+        top: -16%;
+      }
+    }
+    @include _767 {
+      padding-top: 60px;
+    }
+    @include _540 {
+      padding: 35px 20px 20px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 45px;
+    text-align: center;
+    max-width: 100%;
+    @include _767 {
+      margin-bottom: calc(30px - (30 - 45) * ((100vw - 767px) / (767 - 375)));
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin-bottom: 18px;
+
+    @include _1200 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include _767 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__input {
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 27px 11px 12px;
+    color: #000;
+    border: none;
+    &::placeholder {
+      color: #000;
+    }
+
+    @include _1200 {
+      padding: 15px 27px 15px 12px;
+      font-size: 16px;
+    }
+    @include _767 {
+      grid-column: span 1;
+    }
+  }
+
+  &__btn {
+    background-color: #000;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 27px 12px 27px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    &:hover {
+      border: 1px solid #fff;
+      transition: all 0.3s;
+    }
+
+    @include _1200 {
+      margin: 0 auto;
+      width: 49%;
+       padding: 15px 27px;
+      grid-column: span 2;
+      font-size: 16px;
+
+    }
+    @include _767 {
+      grid-column: span 1;
+    }
+  }
+
+  &__agree {
+    color: #fff;
+    text-align: right;
+    margin-right: 30px;
+
+    & a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+    @include _540 {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}

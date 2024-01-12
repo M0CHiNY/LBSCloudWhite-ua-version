@@ -1,0 +1,37 @@
+/* libs */
+@import "base/libs";
+
+/* CSS Reset */
+@import "base/reset";
+
+/* Fonts */
+@import "base/fonts";
+
+/* Mixins, helpers and functions */
+@import "base/mixins";
+
+/* Global include*/
+@import "base/global";
+
+//parts
+@import "components/header";
+@import "components/menu";
+@import "components/scroll";
+@import "components/subhead";
+@import "components/our-partners";
+@import "components/slogans";
+@import "components/offer";
+@import "components/why";
+@import "components/benefit";
+@import "components/action";
+@import "components/faqs";
+@import "components/env";
+@import "components/blog";
+@import "components/opportunity";
+@import "components/experts";
+@import "components/decision";
+@import "components/servise";
+@import "components/prices";
+@import "components/videotube";
+@import "components/lang";
+@import "components/footer";

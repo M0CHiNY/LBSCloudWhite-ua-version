@@ -1,0 +1,302 @@
+/* Hide all elements with the hidden attribute */
+[hidden]:not([hidden="until-found"]) {
+  display: none !important;
+}
+
+/* Prevent scrolling when the dialog component is shown */
+.ui-prevent-scroll body {
+  overflow: hidden;
+  padding-right: var(--ui-root-scrollbar-width);
+}
+
+:where(dialog, [popover]) {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  inset: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
+  overflow: unset;
+  border-width: 0;
+  &::backdrop {
+    opacity: 0;
+  }
+}
+
+.mob-nav-toggler {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+  margin-right: -1rem;
+  cursor: pointer;
+}
+.mob-nav-toggler svg {
+  width: 1.25rem;
+  fill: #000;
+  stroke: #000;
+}
+@media (min-width: 1024px) {
+  .mob-nav-toggler {
+    display: none;
+  }
+  .nav-submenu a {
+    color: #000;
+  }
+}
+
+.nav-menu {
+  @include Intro-400;
+  font-size: 15px;
+  @include _1246 {
+    font-size: 13px;
+  }
+}
+
+.nav-menu a {
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  .nav-menu a {
+    color: #000;
+  }
+}
+
+:is(.nav-menu, .nav-submenu) a {
+  padding: 0.6rem 1rem;
+  display: block;
+}
+@media (min-width: 1024px) {
+  :is(.nav-menu, .nav-submenu) a {
+    padding: 0.2rem 0.7rem;
+  }
+}
+.nav-submenu {
+  color: black;
+  border-radius: 0.3rem;
+  @include Roboto-400;
+  font-size: calc(15 / 16 * 1rem);
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .nav-submenu {
+    background-color: #fff;
+  }
+  .nav-submenu a {
+    color: #000;
+    @include Roboto-400;
+    font-size: 17px;
+  }
+}
+.nav-submenu:not(.ui-shown) {
+  display: none;
+}
+.nav ul > li > a:not(:only-child)::after {
+  content: "";
+  background-image: url("../images/detail/menu-arrow.svg");
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem; /* Додайте висоту */
+  background-size: contain;
+  aspect-ratio: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  transform: rotate(-90deg);
+
+  /* Змінює колір SVG */
+}
+
+@media (max-width: 1023px) {
+  .nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .nav ul > li > a:not(:only-child)::after {
+    rotate: 90deg;
+    transition: scale 0.2s;
+  }
+  .nav ul > li > a.ui-active:not(:only-child)::after {
+    scale: -1 1;
+  }
+  .mob-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: block;
+  }
+  .mob-nav-backdrop {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.2s;
+    transition-property: opacity, translate;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    opacity: 0;
+  }
+  .mob-nav-backdrop.ui-active {
+    opacity: 1;
+  }
+  .mob-nav-close {
+    all: unset;
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+  .mob-nav-close svg {
+    fill: none;
+    width: 1.75rem;
+    apsect-ratio: 1;
+    stroke: rgb(35 39 50 / 1);
+    display: block;
+    cursor: pointer;
+  }
+
+  .mob-nav-content {
+    background-color: #fff;
+    width: fit-content;
+    height: 100%;
+    padding: 2.5rem 0.5rem;
+    min-width: 16rem;
+    position: relative;
+    overflow: auto;
+  }
+  .mob-nav-content.ui-enter-active,
+  .mob-nav-content.ui-leave-active {
+    transition-duration: 0.2s;
+    transition-property: opacity, translate;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  .mob-nav-content.ui-enter-from,
+  .mob-nav-content.ui-leave-to {
+    opacity: 0;
+    translate: -100% 0;
+  }
+  .mob-nav-content.ui-enter-to,
+  .mob-nav-content.ui-leave-from {
+    opacity: 1;
+    translate: 0%;
+  }
+  .logo--mob {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  .nav-submenu {
+    padding-left: 0.5rem;
+  }
+  .nav-submenu::before,
+  .nav-submenu::after {
+    content: "";
+    height: 0.25rem;
+    display: block;
+  }
+  .nav-submenu::after {
+    height: 0.5rem;
+    background-image: url("../images/detail/menu-arrow.svg");
+    filter: brightness(0) invert(1);
+  }
+  .nav-submenu.ui-enter-active,
+  .nav-submenu.ui-leave-active {
+    transition-duration: 0.2s;
+    transition-property: opacity, height;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+  }
+  .nav-submenu.ui-enter-from,
+  .nav-submenu.ui-leave-to {
+    opacity: 0;
+    height: 0;
+  }
+  .nav-submenu.ui-enter-to,
+  .nav-submenu.ui-leave-from {
+    opacity: 1;
+    height: var(--ui-transition-height);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mob-nav-close,
+  .logo--mob {
+    display: none;
+  }
+  .nav-menu > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .nav-menu > li > a::after {
+    width: 0.5rem;
+    rotate: 90deg;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-submenu {
+    --ui-dropdown-arrow-offset: 0rem;
+    --ui-dropdown-arrow-padding: 0.8rem;
+    --ui-dropdown-arrow-width: 0.4rem;
+    --ui-dropdown-arrow-height: 0.4rem;
+    --ui-dropdown-placement: bottom-start;
+    padding: 0.5rem 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  }
+  .nav-submenu > li {
+    position: relative;
+  }
+  .nav-submenu > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.3rem;
+    outline: none;
+  }
+  .nav-submenu > li > a:is(:hover, :focus-visible) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .nav-submenu > li > a::after {
+    opacity: 0.75;
+  }
+  .nav-submenu .nav-submenu {
+    --ui-dropdown-placement: right-start;
+    --ui-dropdown-padding: -0.25rem;
+    --ui-dropdown-offset: -0.25rem;
+    --ui-dropdown-flip: false;
+    --ui-dropdown-sticky: true;
+  }
+  .nav-submenu.ui-enter-active,
+  .nav-submenu.ui-leave-active {
+    transition-duration: 0.2s;
+    transition-property: opacity, scale;
+    transition-timing-function: ease-in-out;
+    transform-origin: var(--ui-dropdown-transform-origin);
+  }
+  .nav-submenu.ui-enter-from,
+  .nav-submenu.ui-leave-to {
+    opacity: 0;
+    scale: 0.95;
+  }
+  [data-ui-floating="dropdown"]::backdrop {
+    transition: all 0.15s ease-in-out;
+    background-color: rgb(17 24 38 / 0.05);
+    opacity: 0;
+  }
+  [data-ui-floating="dropdown"]:has(> .ui-active)::backdrop {
+    opacity: 1;
+  }
+}

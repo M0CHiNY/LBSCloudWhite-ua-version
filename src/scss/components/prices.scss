@@ -1,0 +1,231 @@
+.prices {
+  position: relative;
+  padding-top: 110px;
+  z-index: 3px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 52px;
+    max-width: 100%;
+    text-align: center;
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrap {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px;
+    margin: 10px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 6px;
+    }
+    @include _1024 {
+      border: none;
+      height: auto;
+      overflow-y: visible;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__caption {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    @include _1200 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include _767 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__card {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    
+    max-width: 365px;
+    min-height: 65px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 9px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
+
+    &:hover{
+     background-color: #275af3;
+     opacity: 0.8;
+     transition: all 0.5s ease-in;
+     .prices__card-parts{
+      color: #fff;
+     }
+     .prices__btn {
+      color: #000;
+      border-color: #000;
+      opacity: 0.8;
+     }
+    }
+
+    @include _1200 {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @include _398 {
+      padding: 5px;
+    }
+  }
+
+  &__card-info {
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  &__card-img-box {
+    flex-shrink: 0;
+    width: 50px;
+    height: 48px;
+    padding-right: 9px;
+
+    @include _398 {
+      padding-right: 4px;
+    }
+  }
+
+  &__card-img {
+    flex-shrink: 0;
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+  }
+
+  &__card-parts {
+    max-width: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include _398 {
+      max-width: 200px;
+    }
+  }
+
+  &__card-caption {
+    font-size: 15px;
+    padding-right: 5px;
+    @include _398 {
+      padding-right: 2px;
+      font-size: 14px;
+    }
+  }
+
+  &__card-cost {
+    font-size: 15px;
+    span {
+      font-weight: bold;
+    }
+    @include _398 {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    color: grey;
+    cursor: pointer;
+    padding: 3px 7px;
+    text-align: center;
+    font-size: 14px;
+    height: 29px;
+    align-self: center;
+
+    @include _398 {
+      border: 1px solid lightgrey;
+      padding: 2px 4px;
+    }
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__inner {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-width: 648px;
+  width: 100%;
+  max-height: 75%;
+  padding: 16px;
+  margin: 10% auto;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+}
+
+.modal__title {
+  position: relative;
+  font-size: 21px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 18px;
+}
+
+.modal__text {
+  padding-top: 18px;
+  p {
+    min-height: 20px;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  a {
+    color: #008f8c;
+  }
+  ol {
+    margin-bottom: 18px;
+    li {
+      margin-left: 18px;
+    }
+  }
+}
+.modal__btn-clouse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}

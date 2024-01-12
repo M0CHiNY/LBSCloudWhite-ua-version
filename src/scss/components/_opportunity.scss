@@ -1,0 +1,147 @@
+.opportunity {
+  &__box {
+    margin-top: calc(35px - (35 - 75) * ((100vw - 1024px) / (1920 - 1024)));
+    display: flex;
+    gap: 203px;
+    @include _1024 {
+      flex-direction: column;
+      align-items: center;
+      gap: calc(10px - (50 - 10) * ((100vw - 1400px) / (1920 - 1400)));
+    }
+    @include _540 {
+      gap: 25px;
+    }
+  }
+
+  &__box-text {
+    width: calc(343px - (343 - 425) * ((100vw - 1024px) / (1920 - 1024)));
+    &--reverse {
+      order: 1;
+
+      @include _1024 {
+        order: -1;
+      }
+    }
+
+    @include _1024 {
+      width: 100%;
+      margin-bottom: 25px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: calc(67px - (67 - 97) * ((100vw - 1024px) / (1920 - 1024))) 0 53px;
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
+    background-clip: text;
+
+    @include _1024 {
+      max-width: 100%;
+      text-align: center;
+      margin: 30px 0;
+    }
+  }
+
+  &__box-description {
+    max-width: 343px;
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    color: black;
+
+    @include _1024 {
+      max-width: 75%;
+      margin: 0 auto 30px;
+    }
+
+    @include _540 {
+      max-width: 100%;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &__box-img {
+    position: relative;
+    z-index: 3;
+    padding-top: 55px;
+    padding-left: 67px;
+    width: 511px;
+    min-height: 335px;
+    @include _540 {
+      min-height: auto;
+      width: 100%;
+      text-align: center;
+      padding-top: 25px;
+      padding-left: 25px;
+    }
+
+    &::before {
+      content: url("../images/opportunity/rhombus.svg");
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      top: 0;
+      left: 0;
+      text-align: center;
+      z-index: -1;
+
+      @include _540 {
+        width: 150px;
+        height: 150px;
+        transform: scale(0.5);
+        top: -40px;
+        left: -40px;
+      }
+    }
+    &--hexagon {
+      &::before {
+        content: url("../images/opportunity/hexagon.svg");
+      }
+    }
+    &--octagon {
+      &::before {
+        content: url("../images/opportunity/octagon.svg");
+      }
+    }
+    &--mod {
+      @include _540 {
+        min-height: calc(230px - (230 - 310) * ((100vw - 375px) / (540 - 375)));
+      }
+      .opportunity__img.opportunity__img--second {
+        position: absolute;
+        width: 444px;
+        max-height: 150px;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 10px;
+
+        @include _540 {
+          width: calc(300px - (300 - 444) * ((100vw - 375px) / (540 - 375)));
+        }
+      }
+    }
+    &--mod-doble {
+      min-height: 390px;
+      @include _540 {
+        min-height: calc(260px - (260 - 390) * ((100vw - 375px) / (540 - 375)));
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 444px;
+    max-width: 444px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    @include _540 {
+      width: calc(300px - (300 - 444) * ((100vw - 375px) / (540 - 375)));
+    }
+  }
+}

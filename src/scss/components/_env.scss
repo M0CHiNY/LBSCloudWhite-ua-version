@@ -1,0 +1,130 @@
+.env {
+ padding: 110px 0;
+  @include _1024 {
+    padding: 50px 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 63px;
+
+    @include _1024 {
+      gap: 20px;
+    }
+
+    @include _767 {
+      display: block;
+    }
+  }
+  &__img-box {
+    max-width: 530px;
+    @include _767 {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    width: 530px;
+    object-fit: cover;
+  }
+
+  &__inner-box-text {
+    max-width: 463px;
+    @include _767 {
+      max-width: 600px;
+    }
+  }
+  &__btn-box .action__btn{
+   margin-right: 19px;
+  }
+  &__title {
+    position: relative;
+    z-index: 3;
+    max-width: 440px;
+    margin-bottom: 37px;
+    color: #000;
+    background: #fff;
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    margin-bottom: 39px;
+  }
+}
+
+.fast-adapt {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  overflow: hidden;
+  @include _767 {
+    flex-direction: column;
+  }
+
+  &__bg {
+    position: relative;
+    z-index: 3;
+    flex: 0 0 100%;
+    @include _767 {
+      background-color: #000;
+      box-shadow: 15px 0 0 0 #000;
+    }
+  }
+
+  &__box {
+    padding: 58px 20px 20px 0;
+    width: 44.8%;
+    min-height: 291px;
+    background-color: #000;
+    box-shadow: -125px 0 0 0 #000;
+    @include _767 {
+      width: 100%;
+    }
+    @include _540 {
+      padding-top: 30px;
+    }
+  }
+
+  &__img-box {
+    flex: 0 0 55%;
+    transform: translateX(-100%);
+    @include _767 {
+      flex: 0 0 100%;
+      transform: translateX(0);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 291px;
+    object-fit: cover;
+    @include _767 {
+      min-height: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    color: #fff;
+  }
+
+  &__text {
+    max-width: 340px;
+    color: #fff;
+    @include _767 {
+      max-width: 600px;
+    }
+  }
+}

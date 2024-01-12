@@ -1,0 +1,42 @@
+.our-partners {
+  padding-top: 20px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include _540 {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include _767 {
+      margin: 0 auto;
+    }
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include _767 {
+         margin: 0 auto 15px;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 150px;
+    object-fit: cover;
+
+    @include _767 {
+      max-width: 100%;
+      // margin-bottom: 15px;
+      margin: 0 auto 15px;
+    }
+  }
+}

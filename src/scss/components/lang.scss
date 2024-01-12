@@ -1,0 +1,52 @@
+:root {
+  --background-gradient: linear-gradient(180deg, #1523B7 0%, #275AF3 100%);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+select {
+  
+  font-size: 16px;
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  // padding: 0 1em;
+  color: #fff;
+  background-color:#0E0E0E;
+  background-image: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 44px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background: linear-gradient(180deg, #1523B7 0%, #275AF3 100%);
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #0E0E0E;
+}
+

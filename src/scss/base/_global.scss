@@ -1,0 +1,151 @@
+html,
+body {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  color: #000;
+  font-size: 16px;
+  line-height: normal;
+  height: 100%;
+  @include Roboto-400;
+}
+
+.main {
+  position: relative;
+  padding-top: 117px;
+  flex-grow: 1;
+  @include _1024 {
+    padding-top: 107px;
+  }
+  @include _1024 {
+    padding-top: 97px;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, #efefef 0%, #efefef 100%), #efefef;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  &::before {
+    left: 35.8%;
+  }
+  &::after {
+    right: 36.2%;
+  }
+  @include _1399 {
+    &::after,
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1185px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+}
+
+.containr-midle {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+}
+
+.title {
+  background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
+  background-clip: text;
+  font-size: calc(28px - (28 - 36) * ((100vw - 375px) / (1920 - 375)));
+  @include Intro-400;
+  max-width: 425px;
+  text-transform: uppercase;
+  color: transparent;
+}
+
+.container-big {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.btn-try {
+  padding: 12px 40px;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  @include Intro-400;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid #1523b7;
+    transition: all 0.3s;
+  }
+  @include _540 {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  @include Intro-400;
+  background: linear-gradient(180deg, #275af3 0%, #1523b7 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  background-color: linear-gradient(180deg, #275af3 0%, #1523b7 100%);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+  padding: 12px 26px;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #071aeb;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  &:active {
+    top: 2px;
+  }
+  @include _540 {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+}

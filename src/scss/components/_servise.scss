@@ -1,0 +1,65 @@
+.servise {
+  padding-top: 110px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 53px;
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 3;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 174px;
+    height: 171px;
+    display: flex;
+    justify-content: center;
+
+    @include _590 {
+      width: 124px;
+      height: 131px;
+    }
+
+
+    p {
+      @include Intro-400;
+      color: #1523b7;
+      text-align: center;
+      text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+      font-weight: 400;
+      margin-top: 71px;
+      padding: 0 10px 10px;
+
+      @include _590 {
+        margin-top: 40px;
+        font-size: 15px;
+      }
+    }
+
+    &::after {
+      content: url("../images/detail/Polygon-3.svg");
+      position: absolute;
+      text-align: center;
+      width: 59px;
+      height: 59px;
+      top: -20px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}

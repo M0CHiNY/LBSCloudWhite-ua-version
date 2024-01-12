@@ -1,0 +1,65 @@
+.experts {
+  padding-top: 110px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 51px;
+    max-width: 380px;
+    @include _1024 {
+      margin-bottom: 30px;
+      max-width: 350px;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 39px;
+    position: relative;
+    z-index: 3;
+
+    @include _767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__inner {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+    min-height: 318px;
+    @include _767 {
+      max-width: 550px;
+    }
+  }
+
+  &__bg {
+    max-width: 559px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 39px;
+    background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+
+    @include _540 {
+      height: 25px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__caption {
+    @include Intro-400;
+    margin: 0 0 15px 16px;
+  }
+
+  &__list {
+    padding: 0 16px 30px;
+    margin-left: 16px;
+    list-style-type: disc;
+  }
+}

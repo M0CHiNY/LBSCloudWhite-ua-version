@@ -1,0 +1,97 @@
+.offer {
+  padding-top: 110px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__pre-title {
+    @include Intro-400;
+    margin-bottom: 30px;
+    @include _767 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    max-width: 400px;
+
+    @include _767 {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include _1200 {
+      gap: 10px;
+    }
+
+    @include _767 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__rect {
+    max-width: 379px;
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    p {
+      padding: 35px 45px;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+
+      @include _1024 {
+        padding: 20px 15px 15px;
+      }
+    }
+
+    &--color-mod {
+      background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
+      margin-top: 84px;
+      @include _767 {
+        margin: 30px auto 0;
+      }
+      @include _540 {
+        margin: 20px auto 0;
+      }
+      .offer__rect-svg svg path {
+        fill: #000;
+      }
+    }
+    &:first-child {
+      margin: 30px 0;
+      @include _767 {
+        margin: 0 auto;
+      }
+    }
+    &:last-child {
+      margin-bottom: 80px;
+      @include _767 {
+        margin: 30px auto 0;
+      }
+      @include _540 {
+        margin: 20px auto 0;
+      }
+    }
+  }
+  &__rect-svg {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: -15px;
+    right: 20px;
+    text-align: center;
+  }
+}

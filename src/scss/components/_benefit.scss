@@ -1,0 +1,133 @@
+.benefit {
+  position: relative;
+  z-index: 3;
+  padding-top: 110px;
+  @include _1024 {
+    padding-top: 50px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @include _767 {
+      display: block;
+    }
+  }
+
+  &__box-title {
+    margin-bottom: 74px;
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__pre-title {
+    @include Intro-400;
+    margin-bottom: 30px;
+    @include _1024 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    max-width: 636px;
+
+    p {
+      padding-right: 5px;
+      @include _767 {
+        padding: 0;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 68px;
+
+    @include _1024 {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 55px;
+    }
+    @include _767 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    @include _540 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    max-width: 310px;
+    position: relative;
+    padding-left: 48px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      background-color: #1523b7;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      @include _540 {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    p {
+      padding-right: 5px;
+
+      @include _767 {
+        padding: 0;
+      }
+    }
+    @include _540 {
+      max-width: 410px;
+      padding-left: 35px;
+    }
+  }
+
+  &__item-caption {
+    @include Intro-400;
+    margin-bottom: 5px;
+  }
+
+  &__img-box {
+    max-width: 388px;
+    width: 100%;
+    position: relative;
+    &::after {
+      content: url("../images/detail/pentagon.svg");
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      top: -60px;
+      left: -59px;
+      z-index: -1;
+    }
+    @include _1024 {
+      margin-top: auto;
+    }
+
+    @include _767 {
+      display: none;
+    }
+  }
+
+  &__img {
+    border-radius: 11px;
+    width: 100%;
+    max-width: 388px;
+    height: 556px;
+    object-fit: cover;
+  }
+}

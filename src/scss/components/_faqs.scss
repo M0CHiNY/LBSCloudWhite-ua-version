@@ -1,0 +1,126 @@
+.faqs {
+  padding-top: 100px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 77px;
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    max-width: 909px;
+    margin: 0 auto;
+  }
+
+  &__cross {
+    position: absolute;
+    right: 27px;
+    top: 12px;
+    transform: rotate(90deg);
+    color: #fff;
+    font-size: 16px;
+    z-index: 1;
+  }
+}
+
+.collapse-enter-active,
+.collapse-leave-active {
+  transition: 500ms ease-in-out;
+  overflow: hidden;
+}
+.collapse-enter-to,
+.collapse-leave-from {
+  height: var(--ui-transition-height);
+}
+.collapse-enter-from,
+.collapse-leave-to {
+  opacity: 0;
+  height: 0;
+}
+
+.accordion {
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.accordion-item {
+  &.ui-active {
+    font-size: 16px;
+    border-radius: 32px 32px 0 0;
+  }
+}
+
+.accordion-tab {
+  background-color: transparent;
+  @include Intro-400;
+  max-width: 909px;
+  border: none;
+  width: 100%;
+  position: relative;
+  height: 25px;
+  cursor: pointer;
+  padding-right: 70px;
+  min-height: 40px;
+  font-size: 16px !important;
+  text-align: left;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 25px;
+    right: 0;
+    top: 10px;
+    border-radius: 10px;
+    background: #1523b7;
+  }
+
+  @include _767 {
+    font-size: 15px !important;
+  }
+
+  @include _540 {
+    padding-left: 0;
+    font-size: 14px;
+    height: auto;
+    min-height: 50px;
+  }
+
+  &.ui-active {
+    color: #1523b7;
+    &::after {
+    background-color: #000;
+    }
+  }
+}
+
+.accordion-panel {
+  position: relative;
+  padding: 10px 15px;
+  max-width: 750px;
+  background-color: #1523b7;
+  opacity: 0.9;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-left: 15px;
+
+  @include _540 {
+    margin-left: 0;
+    font-size: 15px;
+  }
+}

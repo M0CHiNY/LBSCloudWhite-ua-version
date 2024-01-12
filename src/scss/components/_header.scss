@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  z-index: 50;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 30px 0;
+  @include _1024 {
+    padding: 25px 0;
+  }
+  @include _767 {
+    padding: 15px 0;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+  }
+
+  &__logo {
+    margin-right: 40px;
+    &.header__logo--mobile {
+      display: none;
+      @include _1024 {
+        display: block;
+        margin-bottom: 20px;
+        .header__logo-img {
+          max-width: 90px;
+          object-fit: scale-down;
+          height: 34px;
+        }
+      }
+    }
+  }
+  .wp_inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include _1024 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .header__logo.header__logo--mobile {
+      display: none;
+    }
+  }
+
+  &__logo-img {
+    max-width: 128px;
+    width: 100%;
+    height: 35px;
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__item-link {
+    @include Intro-400;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+      background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
+      background-clip: text;
+      color: #275af3;
+    }
+  }
+
+  &__btn {
+    @include _1246 {
+      display: none;
+    }
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher__item {
+  &:not(:last-child) {
+    position: relative;
+    margin-right: 3px;
+    padding-right: 10px;
+
+    &::after {
+      position: absolute;
+      content: '/';
+      @include Intro-400;
+      font-size: 15px;
+      right: 0;
+      bottom: 0;
+      color: #000;
+    }
+  }
+}
+
+.lang-switcher-link {
+  font-size: 15px;
+  @include Intro-400;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.lang-switcher--mobile  {
+  display: none;
+
+  @include _1024 {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 16px;
+  }
+}
+
+
