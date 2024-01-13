@@ -103,9 +103,9 @@
                 </nav>
                 <div class="mobile__inner">
                   <div class="select">
-                    <select>
-                      <option value="ENG">ENG</option>
-                      <option value="UA">UA</option>
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
                     </select>
                   </div>
                 </div>
@@ -131,9 +131,9 @@
             </button>
             <div class="wp_inner">
               <div class="select">
-                <select>
-                  <option value="ENG">ENG</option>
-                  <option value="UA">UA</option>
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
                 </select>
               </div>
               <a class="header__btn btn" href="#down">Зв'язатися з нами</a>
@@ -153,18 +153,16 @@
               <div class="subhead__item">
                 <h1 class="subhead__title" style="font-size: 64px;">LBS Cloud</h1>
                 <div class="subhead__title-description">
-                  Cloud based LBS platform has do zens of business apps that
-                  help implement automatization of processes in a firm, bring
-                  profit to company owner and help manager reach their KPI.
+                  Хмарна платформа LBS має десятки бізнес-додатків, які допомагають впровадити автоматизацію процесів у фірмі, приносять прибуток власнику компанії та допомагають менеджерам досягати своїх ключових показників ефективності.
                 </div>
                 <div class="subhead-box">
-                  <a class="btn-try" href="https://ibs.bravo-digital.com.ua/prices.html">TRY now</a>
+                  <a class="btn-try" href="https://ibs.bravo-digital.com.ua/prices.html">спробувати</a>
                   <a class="btn" href="#down">contact us</a>
                 </div>
               </div>
               <btn type="button" data-ui-toggle="my-dialog" class="btn-call">
                 <div class="btn-call__ico">
-                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">video</a>
+                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">Відео</a>
               </btn>
             </div>
           </div>
@@ -177,21 +175,21 @@
               <img class="env__img" src="images/circle-cascade.png" alt="circle" />
             </div>
             <div class="env__inner-box-text">
-              <h2 class="env__title title">Productive environment</h2>
+              <h2 class="env__title title">продуктивне середовище</h2>
               <div class="env__desc">
                 <p>
-                  LBS Cloud offers ready-made tools for business development.
-                  Whether you are a small business or a corporation, LBS Cloud
-                  can offer applications to improve business efficiency, speed
-                  up processes and reduce costs. The applications are already
-                  integrated with each other, hence adding new modules to CRM
-                  like accounting, tasks or a contact center happens quickly
-                  and without involvement of programmers.
+                  LBS Cloud пропонує готові інструменти для розвитку бізнесу.
+                  Незалежно від того, чи ви малий бізнес, чи корпорація, LBS Cloud
+                  може запропонувати додатки для підвищення ефективності бізнесу, прискорення
+                  прискорити процеси та зменшити витрати. Додатки вже інтегровані між собою
+                  інтегровані між собою, що дозволяє додавати нові модулі до CRM
+                  наприклад, бухгалтерії, завдань або контакт-центру, відбувається швидко
+                  і без залучення програмістів.
                 </p>
               </div>
               <div class="env__btn-box">
-                <a class="action__btn" href="#">create crm</a>
-                <button class="btn">contact us</button>
+                <a class="action__btn" href="#">створити crm</a>
+                <button class="btn">Зв'язатися з нами</button>
               </div>
             </div>
           </div>
@@ -202,14 +200,13 @@
         <div class="fast-adapt__bg">
           <div class="container">
             <div class="fast-adapt__box">
-              <h2 class="fast-adapt__title title">Quick adaptation</h2>
+              <h2 class="fast-adapt__title title">Швидка адаптація</h2>
               <div class="fast-adapt__text">
                 <p>
-                  Business conditions change rapidly and business platform
-                  must respond quickly to new requirements. New applications
-                  and integrations with external services are added to LBS
-                  Cloud every month, what means more opportunities for
-                  business development.
+                 Умови ведення бізнесу швидко змінюються, і бізнес-платформа
+                  повинна швидко реагувати на нові вимоги. Нові додатки
+                  та інтеграції з зовнішніми сервісами додаються до LBS
+                  Cloud щомісяця додаються нові додатки та інтеграції з зовнішніми сервісами, а це означає більше можливостей для розвитку бізнесу.
                 </p>
               </div>
             </div>
@@ -221,22 +218,34 @@
       </div>
 
       <section class="action" id="down">
-        <div class="container">
-          <div class="action__inner">
-            <div class="action__title title">Take a consultation</div>
-            <form action="#" method="post" class="action__form">
-              <input class="action__input" type="text" placeholder="First and last name" />
-              <input class="action__input" type="text" placeholder="Phone number" />
-              <input class="action__input" type="text" placeholder="Email" />
-              <input class="action__input" type="text" placeholder="Company name" />
-              <button type="button" class="action__btn">ENTER</button>
-            </form>
-            <div class="action__agree">
-              I agree with LBS Group <a href="">Private policy</a>
+          <div class="container">
+            <div class="action__inner">
+              <div class="action__title title">отримати консультацію</div>
+              <form action="#" method="post" class="action__form">
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Ім'я та прізвище"
+                />
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Номер телефону"
+                />
+                <input class="action__input" type="text" placeholder="Електронна пошта" />
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Назва компанії"
+                />
+                <button type="button" class="action__btn">вхід</button>
+              </form>
+              <div class="action__agree">
+               Я згоден з Приватною політикою <a href="#">Приватна політика</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
     </main>
     <div id="footer"></div>
   </div>

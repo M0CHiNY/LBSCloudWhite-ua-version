@@ -103,9 +103,9 @@
                 </nav>
                 <div class="mobile__inner">
                   <div class="select">
-                    <select>
-                      <option value="ENG">ENG</option>
-                      <option value="UA">UA</option>
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
                     </select>
                   </div>
                 </div>
@@ -131,9 +131,9 @@
             </button>
             <div class="wp_inner">
               <div class="select">
-                <select>
-                  <option value="ENG">ENG</option>
-                  <option value="UA">UA</option>
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
                 </select>
               </div>
               <a class="header__btn btn" href="#down">Зв'язатися з нами</a>
@@ -157,8 +157,8 @@
                   Модуль "Склад" в LBS Cloud - це інструмент для управління складськими процесами та запасами в компанії. Він допомагає ефективно відстежувати запаси, управляти поставками, проводити інвентаризації та оптимізувати використання ресурсів.
                 </div>
                 <div class="subhead-box">
-                  <a class="btn-try" href="https://ibs.bravo-digital.com.ua/prices.html">TRY now</a>
-                  <a class="btn" href="#down">contact us</a>
+                  <a class="btn-try" href="https://ibs.bravo-digital.com.ua/prices.html">Спробувати</a>
+                  <a class="btn" href="#down">Зв'язатися з нами</a>
                 </div>
               </div>
               <btn type="button" data-ui-toggle="my-dialog" class="btn-call">
@@ -223,22 +223,34 @@
       </section>
 
       <section class="action" id="down">
-        <div class="container">
-          <div class="action__inner">
-            <div class="action__title title">Take a consultation</div>
-            <form action="#" method="post" class="action__form">
-              <input class="action__input" type="text" placeholder="First and last name" />
-              <input class="action__input" type="text" placeholder="Phone number" />
-              <input class="action__input" type="text" placeholder="Email" />
-              <input class="action__input" type="text" placeholder="Company name" />
-              <button type="button" class="action__btn">ENTER</button>
-            </form>
-            <div class="action__agree">
-              I agree with LBS Group <a href="">Private policy</a>
+          <div class="container">
+            <div class="action__inner">
+              <div class="action__title title">отримати консультацію</div>
+              <form action="#" method="post" class="action__form">
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Ім'я та прізвище"
+                />
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Номер телефону"
+                />
+                <input class="action__input" type="text" placeholder="Електронна пошта" />
+                <input
+                  class="action__input"
+                  type="text"
+                  placeholder="Назва компанії"
+                />
+                <button type="button" class="action__btn">вхід</button>
+              </form>
+              <div class="action__agree">
+               Я згоден з Приватною політикою <a href="#">Приватна політика</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
     </main>
     <div id="footer"></div>
