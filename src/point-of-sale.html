@@ -10,107 +10,137 @@
 <body>
   <div class="container-big">
     <header class="header">
-      <div class="containr-midle">
-        <div class="header__wrap">
-          <a class="header__logo" href="/">
-            <img class="header__logo-img" src="images/logo.png" alt="logo" />
-          </a>
-          <div class="mob-nav" id="mob-nav">
-            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
-            <div data-ui-dialog-content class="mob-nav-content">
-              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <a class="header__logo header__logo--mobile" href="/">
-                <img class="header__logo-img" src="images/logo.png" alt="logo" />
-              </a>
-              <nav class="nav">
-                <ul class="nav-menu">
-                  <li><a href="/info.html">products</a></li>
-                  <li>
-                    <a href="#">opportunities</a>
-                    <ul class="nav-submenu" id="level-1">
-                      <li>
-                        <a href="/crm.html">CRM</a>
-                      </li>
-                      <li>
-                        <a href="/integrations.html">Integrations</a>
-                      </li>
-                      <li>
-                        <a href="/human-resources.html">Personnel</a>
-                      </li>
-                      <li>
-                        <a href="/project-manager.html">Tasks and projects</a>
-                      </li>
-                      <li>
-                        <a href="/contact-center.html">Contact Center</a>
-                      </li>
-                      <li>
-                        <a href="/website-builder.html">Website builder</a>
-                      </li>
-                      <li>
-                        <a href="/finance.html">Finance</a>
-                      </li>
-                      <li>
-                        <a href="/production.html">Production</a>
-                      </li>
-                      <li>
-                        <a href="/warehouse.html">Warehouse</a>
-                      </li>
-                      <li>
-                        <a href="/point-of-sale.html">Point of sale</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/prices.html">prices</a>
-                  </li>
-                  <li>
-                    <a href="#">partners</a>
-                  </li>
-                  <li>
-                    <a href="/customization.html">customizations</a>
-                  </li>
-                  <li>
-                    <a href="/blog.html">blog</a>
-                  </li>
-                </ul>
-              </nav>
-               <ul class="lang-switcher lang-switcher--mobile">
-                <li class="lang-switcher__item">
-                  <a class="lang-switcher-link lang-switcher-link--active" href="#">Eng</a>
-                </li>
-                <li class="lang-switcher__item">
-                  <a class="lang-switcher-link" href="#">ua</a>
-                </li>
-              </ul>
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">продукти</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">налаштування</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select>
+                      <option value="ENG">ENG</option>
+                      <option value="UA">UA</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select>
+                  <option value="ENG">ENG</option>
+                  <option value="UA">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn" href="#down">Зв'язатися з нами</a>
             </div>
           </div>
-          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
-              class="w-4.5 h-auto stroke-current">
-              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
-              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
-              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
-            </svg>
-          </button>
-          <div class="wp_inner">
-           <ul class="lang-switcher">
-            <li class="lang-switcher__item">
-              <a class="lang-switcher-link lang-switcher-link--active" href="#">Eng</a>
-            </li>
-            <li class="lang-switcher__item">
-              <a class="lang-switcher-link" href="#">ua</a>
-            </li>
-          </ul>
-            <a class="header__btn btn" href="#down">contact us</a>
-          </div>
         </div>
-      </div>
-    </header>
+      </header>
     <main class="main">
       <a class="up-arrow" href="#" id="up">
         <p>&#8593;</p>
@@ -122,9 +152,9 @@
           <div class="container">
             <div class="subhead__items">
               <div class="subhead__item">
-                <h1 class="subhead__title">Point of Sale</h1>
+                <h1 class="subhead__title">Точка продажу</h1>
                 <div class="subhead__title-description description--mod" style="max-width: 693px;">
-                  The "Point of Sale" module in LBS Cloud is a tool designed to manage sales and provide efficient customer service in stores, retail outlets, and restaurants. It offers seamless integration with inventory and accounting, providing real-time statistics and consolidation across all stores without the hassle of integrating multiple applications.
+                  Модуль "Точка продажу" в LBS Cloud - це інструмент, призначений для управління продажами та забезпечення ефективного обслуговування клієнтів у магазинах, торгових точках і ресторанах. Він пропонує бездоганну інтеграцію з інвентаризацією та бухгалтерським обліком, надаючи статистику в режимі реального часу та консолідацію по всіх магазинах без зайвих клопотів з інтеграцією декількох додатків.
                 </div>
                 <div class="subhead-box">
                   <a class="btn-try" href="https://ibs.bravo-digital.com.ua/prices.html">TRY now</a>
@@ -133,7 +163,7 @@
               </div>
               <btn type="button" data-ui-toggle="my-dialog" class="btn-call">
                 <div class="btn-call__ico">
-                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">video</a>
+                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">Відео</a>
               </btn>
             </div>
           </div>
@@ -145,11 +175,12 @@
           <div class="opportunity__box">
             <div class="opportunity__box-text">
               <h2 class="opportunity__title title">
-                Intuitive and User-Friendly Interface
+                Інтуїтивний і зручний інтерфейс
               </h2>
               <div class="opportunity__box-description">
                 <p>
-                  The "Point of Sale" module provides an intuitive and user-friendly interface that simplifies the sales and customer service processes. You can easily search for products, create orders, process payments, and generate invoices.
+                  Модуль "Точка продажу" надає інтуїтивний і зручний інтерфейс, що спрощує процеси продажу та обслуговування клієнтів. 
+Ви можете легко шукати товари, створювати замовлення, обробляти платежі і виписувати рахунки.
                 </p>
               </div>
             </div>
@@ -160,11 +191,11 @@
           <div class="opportunity__box">
             <div class="opportunity__box-text opportunity__box-text--reverse">
               <h2 class="opportunity__title title">
-                Flexible Payment <br> Options
+                Широкі можливості оплати
               </h2>
               <div class="opportunity__box-description">
                 <p>
-                 The module supports various payment methods, including cash, credit cards, checks, contactless payments, and more. You can easily process payments and print receipts or electronic invoices.
+                 Модуль підтримує різноманітні способи оплати, включаючи готівку, кредитні картки, чеки, безконтактні платежі і інші. Ви можете легко обробляти оплати і друкувати чеки або електронні квитанції.
                 </p>
               </div>
             </div>
@@ -176,11 +207,11 @@
           <div class="opportunity__box">
             <div class="opportunity__box-text">
               <h2 class="opportunity__title title">
-               Integration with Inventory and Accounting
+              Інтеграція зі складом і обліком
               </h2>
               <div class="opportunity__box-description">
                 <p>
-                The "Point of Sale" module is fully integrated with the "Inventory" module and accounting in LBS Cloud. This allows for automatic updating of inventory during sales and provides financial reporting related to sales.
+                Модуль "Точка продажу" повністю інтегрований з модулем "Склад" і бухгалтерським обліком в LBS Cloud. Це дозволяє автоматично оновлювати запаси товарів під час продажу і отримувати фінансову звітність, пов'язану з продажами.
                 </p>
               </div>
             </div>
