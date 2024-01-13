@@ -134,16 +134,20 @@ body {
     border-radius: 10px;
     transition: all 0.3s ease;
   }
+  
   &:hover {
     color: #fff;
   }
+
   &:hover:after {
     left: 0;
     width: 100%;
   }
+
   &:active {
     top: 2px;
   }
+
   @include _540 {
     font-size: 15px;
     padding: 8px 15px;
