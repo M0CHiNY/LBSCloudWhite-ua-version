@@ -10,107 +10,137 @@
 <body>
   <div class="container-big">
     <header class="header">
-      <div class="containr-midle">
-        <div class="header__wrap">
-          <a class="header__logo" href="/">
-            <img class="header__logo-img" src="images/logo.png" alt="logo" />
-          </a>
-          <div class="mob-nav" id="mob-nav">
-            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
-            <div data-ui-dialog-content class="mob-nav-content">
-              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <a class="header__logo header__logo--mobile" href="/">
-                <img class="header__logo-img" src="images/logo.png" alt="logo" />
-              </a>
-              <nav class="nav">
-                <ul class="nav-menu">
-                  <li><a href="/info.html">products</a></li>
-                  <li>
-                    <a href="#">opportunities</a>
-                    <ul class="nav-submenu" id="level-1">
-                      <li>
-                        <a href="/crm.html">CRM</a>
-                      </li>
-                      <li>
-                        <a href="/integrations.html">Integrations</a>
-                      </li>
-                      <li>
-                        <a href="/human-resources.html">Personnel</a>
-                      </li>
-                      <li>
-                        <a href="/project-manager.html">Tasks and projects</a>
-                      </li>
-                      <li>
-                        <a href="/contact-center.html">Contact Center</a>
-                      </li>
-                      <li>
-                        <a href="/website-builder.html">Website builder</a>
-                      </li>
-                      <li>
-                        <a href="/finance.html">Finance</a>
-                      </li>
-                      <li>
-                        <a href="/production.html">Production</a>
-                      </li>
-                      <li>
-                        <a href="/warehouse.html">Warehouse</a>
-                      </li>
-                      <li>
-                        <a href="/point-of-sale.html">Point of sale</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/prices.html">prices</a>
-                  </li>
-                  <li>
-                    <a href="#">partners</a>
-                  </li>
-                  <li>
-                    <a href="/customization.html">customizations</a>
-                  </li>
-                  <li>
-                    <a href="/blog.html">blog</a>
-                  </li>
-                </ul>
-              </nav>
-               <ul class="lang-switcher lang-switcher--mobile">
-                <li class="lang-switcher__item">
-                  <a class="lang-switcher-link lang-switcher-link--active" href="#">Eng</a>
-                </li>
-                <li class="lang-switcher__item">
-                  <a class="lang-switcher-link" href="#">ua</a>
-                </li>
-              </ul>
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">продукти</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">налаштування</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select>
+                      <option value="ENG">ENG</option>
+                      <option value="UA">UA</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select>
+                  <option value="ENG">ENG</option>
+                  <option value="UA">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn" href="#down">Зв'язатися з нами</a>
             </div>
           </div>
-          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
-              class="w-4.5 h-auto stroke-current">
-              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
-              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
-              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
-            </svg>
-          </button>
-          <div class="wp_inner">
-           <ul class="lang-switcher">
-            <li class="lang-switcher__item">
-              <a class="lang-switcher-link lang-switcher-link--active" href="#">Eng</a>
-            </li>
-            <li class="lang-switcher__item">
-              <a class="lang-switcher-link" href="#">ua</a>
-            </li>
-          </ul>
-            <a class="header__btn btn" href="#down">contact us</a>
-          </div>
         </div>
-      </div>
-    </header>
+      </header>
     <main class="main">
       <a class="up-arrow" href="#" id="up">
         <p>&#8593;</p>
@@ -121,19 +151,19 @@
           <div class="subhead__wrapper">
             <div class="subhead__items">
               <div class="subhead__item">
-                <div class="subhead__sub-title">LBS for everyone</div>
+                <div class="subhead__sub-title">LBS для кожного</div>
                 <h1 class="subhead__title">
-                  THE PROGRAM <br> IS SUITABLE <br> FOR YOU IF YOU
+                  програма підходить для вас, якщо ви
                 </h1>
                 <div class="subhead-box">
-                  <a class="btn" href="#down">contact us</a>
+                  <a class="btn" href="#down">зв'яжетесь з нами</a>
                 </div>
               </div>
               <!-- video btn start -->
 
               <btn type="button" data-ui-toggle="my-dialog" class="btn-call">
                 <div class="btn-call__ico">
-                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">video</a>
+                  <a href="https://youtu.be/E_MpSDDkKS4" class="tube">Відео</a>
               </btn>
 
               <!-- video btn end -->
