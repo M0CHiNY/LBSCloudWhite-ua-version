@@ -21,7 +21,7 @@
   }
 
   &__logo {
-    margin-right: 40px;
+
     &.header__logo--mobile {
       display: none;
       @include _1024 {
@@ -38,7 +38,7 @@
   .wp_inner {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     @include _1023 {
       display: none;
     }
@@ -89,9 +89,76 @@
 }
 .mobile__inner {
   display: none;
-  @include _1023 {
+  @include _1024 {
     display: block;
   }
 }
+.header__btn.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  min-height: 44px;
+  font-size: 12px;
 
+  @include _1200 {
+    font-size: 10px;
+  }
+  
+  @include _1023 {
+    width: calc(100% - 16px);
+    margin: 15px 0 15px 16px;
+  }
+}
 
+.header__btn {
+  &--enter {
+    @include Intro-400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    min-height: 44px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: solid 1px #1523b7;
+    background-color: #fff;
+    color: #1523b7;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+      border-color 0.4s ease-in-out;
+    @include _1023 {
+      width: calc(100% - 16px);
+      margin-left: 16px;
+    }
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+      background-color: #1523b7;
+    }
+  }
+}
+
+.header__btn.btn.header__btn--connect{
+  @include _1140 {
+    display: none;
+  }
+}
+
+.wp_inner .header__btn.btn,
+.wp_inner .header__btn.header__btn--enter{
+  @include _1023{
+    display: none;
+  }
+}
+
+.mobile__inner .header__btn.btn,
+.mobile__inner .header__btn.header__btn--enter{
+  display: none;
+  @include _1023{
+    @include Intro-400;
+    font-size: 12px;
+    display: flex;
+  }
+}
