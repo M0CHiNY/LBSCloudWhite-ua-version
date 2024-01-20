@@ -5,8 +5,7 @@
 }
 
 select {
-  
-  font-size: 16px;
+  font-size: 14px;
   /* Reset Select */
   appearance: none;
   outline: 10px red;
@@ -14,12 +13,15 @@ select {
   box-shadow: none;
   /* Personalize */
   flex: 1;
-  // padding: 0 1em;
   color: #fff;
   background-color:#0E0E0E;
   background-image: none;
   cursor: pointer;
-  padding-left: 10px;
+  padding-left: 5px;
+  
+   @include _1200 {
+    font-size: 12px;
+  }
 }
 /* Remove IE arrow */
 select::-ms-expand {
@@ -29,10 +31,15 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 100px;
+  width: 90px;
   height: 44px;
   border-radius: 10px;
   overflow: hidden;
+  
+
+  @include _1023 {
+    margin-left: 16px;
+  }
 }
 /* Arrow */
 .select::after {
@@ -40,7 +47,7 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1em;
+  padding: 15px;
   background: linear-gradient(180deg, #1523B7 0%, #275AF3 100%);
   transition: .25s all ease;
   pointer-events: none;
@@ -50,3 +57,14 @@ select::-ms-expand {
   color: #0E0E0E;
 }
 
+.wp_inner .select{
+  @include _1023{
+    display: none;
+  }
+}
+.mobile__inner .select{
+  display: none;
+  @include _1023{
+    display: flex;
+  }
+}
