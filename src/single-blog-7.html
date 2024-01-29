@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index HTML</title>
+  </head>
+
+  <body>
+    <div class="container-big">
+      <header class="header">
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">платформа</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">кастомізації</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
+                    </select>
+                  </div>
+                  <a class="header__btn btn" href="#down">Спробувати</a>
+                  <button class="header__btn header__btn--enter" href="#down">
+                    вхід
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn header__btn--connect" href="#down"
+                >Зв'язатися з нами</a
+              >
+              <a class="header__btn btn" href="#down">Спробувати</a>
+              <button class="header__btn header__btn--enter" href="#down">
+                вхід
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <a class="up-arrow" href="#" id="up">
+          <p>&#8593;</p>
+        </a>
+
+        <section class="single-blog">
+          <div class="container">
+            <div class="single-blog__wrap">
+              <img class="single-blog__img" src="images/blog/6.jpg" alt="" />
+              <small class="single-blog__time">Час читання: 2 хвилини</small>
+              <h1 class="single-blog__title title">
+                Спрощуйте комунікацію з клієнтами: СМС-розсилки та чат-боти від
+                SMS Club
+              </h1>
+              <div class="single-blog__descr">
+                <p>
+                  Ефективна комунікація з клієнтами — це ключовий фактор успіху
+                  для будь-якого бізнесу. Люди хочуть отримувати оперативну
+                  інфор​мацію, бути в курсі акцій, новин та важливих оголошень.
+                  Тому компанії повинні шукати швидкі та зручні способи
+                  спілкування зі своєю аудиторією.
+                </p>
+                <p>
+                  У цій статті ми розкриємо можливості базових інструментів та
+                  їх інтеграцію з сучасними технологіями. Ви дізнаєтеся, чому
+                  саме ці рішення є вигідними і як вони допоможуть спростити
+                  комунікацію з існуючою клієнтською базою та залученням нової
+                  ЦА.
+                </p>
+                <p>Переваги та вигоди SMS-розсилок:</p>
+                <p>
+                  СМС-маркетинг має ряд переваг над іншими методами просування
+                  бренду, а саме:
+                </p>
+                <ol>
+                  <li>
+                    <span>Швидка та надійна доставка повідомлень</span>
+                  </li>
+                  <li>
+                    <span
+                      >Миттєва доставка СМС на мобільні телефони клієнтів</span
+                    >
+                    Повідомлення приходить одразу після початку кампанії.
+                  </li>
+                  <li>
+                    <span
+                      >Відсутність залежності від інтернет-підключення
+                    </span>
+                    Користувач отримає всю інформацію від бренду, незалежно від
+                    мережіі.
+                  </li>
+                  <li>
+                    <span>Високий рівень відкриття повідомлень</span> В
+                    порівнянні з email маркетингом, SMS відкривають в рази
+                    частіше, ніж електронні листи. Читабельність SMS-повідомлень
+                    завдяки короткому тексту та ключовому заклику до дії складає
+                    90%
+                  </li>
+                </ol>
+                <p>
+                  Висока читабельність і взаємодія Можливість індивідуального
+                  підходу підвищує рівень залученості ЦА, і ось чому саме:
+                </p>
+                <ol>
+                  <li>
+                    <span>Персоналізація повідомлень</span>Звернення по імені,
+                    персоналізовані пропозиції підвищують можливість провести
+                    потенційного клієнта по воронці продажу до фінального кліку
+                    “купити”.
+                  </li>
+                  <li>
+                    <span>Автоматизація процесу спілкування</span>Зручна
+                    інтеграція з CRM-системами та іншими бізнес-інструментами
+                    дозволять надсилати акції, пропозиції тощо саме в той
+                    момент, коли це необхідно.
+                  </li>
+                  <li>
+                    <span>Варіативність використання</span>SMS-розсилки можна
+                    використовувати у різних галузях бізнесу та для різних
+                    цілей. Наприклад, промо-розсилки, сервісні повідомлення,
+                    оповіщення про важливі події та нагадування, кампанії зі
+                    збільшення лояльності тощо.
+                  </li>
+                </ol>
+                <p>
+                  Особливості використання SMS-розсилок та чат-ботів від SMS
+                  Club: Інтеграція сучасних технологій з чат-ботами
+                </p>
+                <p>
+                  Для успішної маркетингової кампанії слід поєднувати не один
+                  інструмент залучення ЦА. Щоб спілкування не було прісним,
+                  додайте до арсеналу чат-боти. Розглянемо яка користь чат-ботів
+                  у бізнесі.
+                </p>
+                <p>Універсальність та гнучкість:</p>
+                <p>
+                  Чат-боти надають швидку відповідь на запитання. Автоматична
+                  обробка інформації дозволяє забезпечити оперативність та
+                  ефективну оптимізацію комунікації. З цим помічником не
+                  потрібно мати величезний штат. Робот не стомлюється 24/7 та
+                  відповідаєє в режимі реального часу.
+                </p>
+                <p>Збір та аналіз інформації — бонус цієї технології.</p>
+                <p>Інтеграція сучасних технологій і чат-ботів:</p>
+                <p>
+                  Чат-бот можна впровадити не тiльки на сайт, але й в будь-який
+                  месенджер, де він стане невід’ємним помічником.
+                </p>
+                <p>
+                  Завдяки штучному інтелекту робот “вивчає” клієнта та адаптує
+                  відповіді. Користувач отримає те, що шукав. Чи принаймні,
+                  дізнається про щось нове. Використовуйте бот для залучення
+                  нових клієнтів. Можливість ведення діалогу та отримання
+                  швидких відповідей привертає увагу та заохочує нових клієнтів
+                  докладніше ознайомитися з пропозиціями бізнесу.
+                </p>
+                <p>Висновок:</p>
+                <p>
+                  Застосування SMS-розсилок та чат-ботів в бізнесі є вигідними
+                  стратегіями для залучення та задоволення клієнтів. Ретельне
+                  планування, адаптація до потреб клієнтів і надання якісної
+                  підтримки є ключовими факторами успіху. Використання
+                  маркетингових інструментів у зв’язці допоможе підвищити
+                  конкурентоспроможність бренду.
+                </p>
+                <p>
+                  Компанія SMS Club — це провідний постачальник масових розсилок
+                  та чат-ботів для бізнесу. Завдяки інноваційним технологіям
+                  спілкування з користувачами стає простим, ефективним і
+                  надійним.
+                </p>
+                <p>
+                  Не гайте часу і перейдіть до ефективної комунікації з
+                  клієнтами вже сьогодні! Для ефективної побудови маркетингової
+                  стратегії ми рекомендуємо поєднувати масові розсилки з
+                  комплексними CRM та ERP рішеннями. Завдяки поєднанню двох
+                  сервісів LBS Cloud та SMS Club ви зможете:
+                </p>
+                <ol>
+                  <li>Створювати ефективну взаємодію з клієнтами та ЦА;</li>
+                  <li>Автоматизувати бізнес-процеси компанії;</li>
+                  <li>Підвищити прибуток та досягти бажаного КПІ.</li>
+                </ol>
+              </div>
+              <a class="single-blog__returne" href="/blog.html">в Блог LBS Cloud</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer"></div>
+    </div>
+    <script src="js/libs/jolty-libs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index HTML</title>
+  </head>
+
+  <body>
+    <div class="container-big">
+      <header class="header">
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">платформа</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">кастомізації</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
+                    </select>
+                  </div>
+                  <a class="header__btn btn" href="#down">Спробувати</a>
+                  <button class="header__btn header__btn--enter" href="#down">
+                    вхід
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn header__btn--connect" href="#down"
+                >Зв'язатися з нами</a
+              >
+              <a class="header__btn btn" href="#down">Спробувати</a>
+              <button class="header__btn header__btn--enter" href="#down">
+                вхід
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <a class="up-arrow" href="#" id="up">
+          <p>&#8593;</p>
+        </a>
+
+        <section class="single-blog">
+          <div class="container">
+            <div class="single-blog__wrap">
+              <img class="single-blog__img" src="images/blog/1.jpg" alt="" />
+              <small class="single-blog__time">Час читання: 2 хвилини</small>
+              <h1 class="single-blog__title title">
+                CRM та ERP: забезпечення синхронізації та цілісності даних у
+                вашій компанії
+              </h1>
+              <div class="single-blog__descr">
+                <p>
+                  В сучасному бізнес-середовищі, де обсяги даних постійно
+                  зростають, ефективне управління та інтеграція даних є критично
+                  важливими для успіху компанії. CRM (Customer Relationship
+                  Management) та ERP (Enterprise Resource Planning) системи
+                  виконують ключову роль у забезпеченні синхронізації та
+                  цілісності даних в усіх аспектах діяльності вашої компанії.
+                </p>
+                <p>
+                  CRM система спрямована на управління взаємодією з клієнтами,
+                  від створення контакту до завершення угоди. Вона збирає,
+                  аналізує та зберігає дані про клієнтів, контакти, угоди,
+                  інтеракції та історію взаємодії. CRM система дозволяє вам
+                  створювати та управляти профілями клієнтів, відстежувати
+                  комунікацію, побудовувати відносини та забезпечувати
+                  персоналізований підхід до кожного клієнта. Але щоб це все
+                  працювало ефективно, потрібна синхронізація з іншими
+                  системами, зокрема з ERP.
+                </p>
+                <p>
+                  ERP система охоплює всі ключові аспекти діяльності компанії,
+                  такі як фінанси, логістика, управління запасами, виробництво
+                  та багато іншого. Вона забезпечує цілісну систему управління
+                  ресурсами компанії та збирає велику кількість даних. ERP
+                  система забезпечує точність та доступність даних, оптимізує
+                  бізнес-процеси та допомагає управляти ресурсами компанії
+                  ефективніше. Але без інтеграції з CRM системою, дані про
+                  клієнтів та продажі можуть бути розділені та неповні.
+                </p>
+                <p>
+                  Синхронізація та цілісність даних між CRM та ERP системами є
+                  необхідною для забезпечення однозначності та точності
+                  інформації в компанії. Ось декілька переваг, які надає така
+                  інтеграція:
+                </p>
+                <ol>
+                  <li>
+                    <span>Однозначна інформація про клієнтів:</span> Інтеграція
+                    CRM та ERP дозволяє мати повну картину про клієнтів, їх
+                    замовлення та історію взаємодії. Це допомагає підвищити
+                    якість обслуговування, покращити персоналізацію та
+                    забезпечити більшу задоволеність клієнтів.
+                  </li>
+                  <li>
+                    <span>Ефективність управління запасами:</span> Завдяки інтеграції, дані про продажі та замовлення автоматично оновлюються у ERP системі, що дозволяє точно контролювати запаси та забезпечувати вчасну поставку.
+                  </li>
+                  <li>
+                    <span>Прогнозування та аналітика:</span> Об'єднання даних з CRM та ERP систем дозволяє проводити більш точний аналіз, розробляти прогнози та приймати стратегічні рішення на основі повної інформації про продажі, клієнтів та ресурси.
+                  </li>
+                  <li>
+                    <span>Ефективне управління проектами: </span>Інтеграція CRM та ERP дозволяє підвищити ефективність управління проектами, забезпечуючи однозначну інформацію про стан проектів, ресурси та витрати.
+                  </li>
+                  <li>
+                    <span>Підвищення продуктивності персоналу:</span> Завдяки інтеграції, співробітники мають доступ до актуальних даних в обох системах, що полегшує їх роботу та підвищує продуктивність.
+
+                  </li>
+                </ol>
+                <p>
+                  CRM та ERP системи, які забезпечують синхронізацію та цілісність даних, є потужним інструментом для ефективного управління вашою компанією. Ця інтеграція допомагає знизити ризики помилок, покращує ефективність роботи та забезпечує більшу клієнтську спрямованість. Застосування CRM та ERP систем разом дозволяє вашій компанії зайняти конкурентну позицію на ринку та досягти успіху.
+                </p>
+              </div>
+              <a class="single-blog__returne" href="/blog.html">в Блог LBS Cloud</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer"></div>
+    </div>
+    <script src="js/libs/jolty-libs.js"></script>
+  </body>
+</html>

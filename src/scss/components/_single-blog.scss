@@ -1,0 +1,53 @@
+.single-blog {
+  padding-bottom: 50px;
+  &__wrap {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 720px;
+    object-fit: cover;
+    margin: 0 auto 2px;
+    height: object-fit;
+  }
+  &__time {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      &::marker {
+        font-weight: bold;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__returne {
+    @include Intro-400;
+    font-size: 14px;
+  }
+}
