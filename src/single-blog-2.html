@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index HTML</title>
+  </head>
+
+  <body>
+    <div class="container-big">
+      <header class="header">
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">платформа</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">кастомізації</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
+                    </select>
+                  </div>
+                  <a class="header__btn btn" href="#down">Спробувати</a>
+                  <button class="header__btn header__btn--enter" href="#down">
+                    вхід
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn header__btn--connect" href="#down"
+                >Зв'язатися з нами</a
+              >
+              <a class="header__btn btn" href="#down">Спробувати</a>
+              <button class="header__btn header__btn--enter" href="#down">
+                вхід
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <a class="up-arrow" href="#" id="up">
+          <p>&#8593;</p>
+        </a>
+
+        <section class="single-blog">
+          <div class="container">
+            <div class="single-blog__wrap">
+              <img class="single-blog__img" src="images/blog/2.jpg" alt="" />
+              <small class="single-blog__time">Час читання: 2 хвилини</small>
+              <h1 class="single-blog__title title">
+                Відстежуйте ефективність роботи відділу продаж з допомогою ERP та CRM систем
+              </h1>
+              <div class="single-blog__descr">
+                <p>
+                  У сучасному бізнесі відділ продажів відіграє важливу роль у досягненні успіху компанії. Ефективність роботи відділу продажів безпосередньо впливає на загальну прибутковість та зростання організації. Однак, для досягнення максимальної ефективності, необхідно мати механізми контролю та відстеження роботи відділу продажів. У цій статті ми розглянемо, як ERP та CRM системи можуть допомогти вам у цьому процесі.
+                </p>
+                <ol>
+                  <li>
+                    <span>Автоматизація та централізація даних:</span> ERP та CRM системи дозволяють збирати, зберігати та обробляти дані про продажі в єдиній централізованій системі. Ви можете відстежувати всі етапи продажу, починаючи з першого контакту з клієнтом і закінчуючи укладанням угоди. Це дозволяє вам мати повну картину про продажі, а також дізнаватися, які клієнти знаходяться на якому етапі воронки продажу.
+                  </li>
+                  <li>
+                    <span>Моніторинг продуктивності:</span> ERP та CRM системи надають інструменти для моніторингу продуктивності відділу продажів. Ви можете відстежувати ключові показники ефективності, такі як кількість укладених угод, обсяг продажів, середній час укладання угоди та конверсійний коефіцієнт. Це допоможе вам визначити сильні та слабкі сторони вашого відділу продажів та прийняти заходи для покращення його роботи.
+                  </li>
+                  <li>
+                    <span>Аналіз даних та звітність:</span> ERP та CRM системи надають можливість аналізувати дані про продажі та створювати різноманітні звіти. Ви можете аналізувати дані по продуктам, клієнтах, ринках та конкурентах. Це допомагає вам виявити тенденції, зрозуміти уподобання клієнтів та приймати обґрунтовані рішення для покращення роботи відділу продажів.
+                  </li>
+                  <li>
+                    <span>Автоматизація процесів:</span>ERP та CRM системи пропонують автоматизацію рутинних та повторюваних завдань, пов'язаних з відділом продажів. Ви можете автоматизувати процеси створення пропозицій, складання договорів, управління знижками та узгодження угод. Це дозволяє вашим співробітникам відділу продажів сконцентруватися на більш важливих завданнях, таких як привернення нових клієнтів та розвиток відносин з поточними клієнтами.
+                  </li>
+                  <li>
+                    <span>Взаємодія та комунікація:</span> ERP та CRM системи забезпечують ефективну взаємодію та комунікацію між співробітниками відділу продажів. Ви можете відстежувати та ділитися інформацією про клієнтів, угоди та завдання. Це покращує співпрацю та координацію роботи відділу продажів, що сприяє підвищенню його ефективності.
+                  </li>
+                </ol>
+                <p>
+                  Впровадження ERP та CRM систем у відділ продажів дозволить вам ефективно відстежувати роботу відділу, підвищити продуктивність та поліпшити результати. Завдяки автоматизації процесів, аналізу даних та централізації інформації, ви зможете приймати обґрунтовані рішення та досягати більшого успіху в бізнесі. Невід'ємна частина сучасної компанії, ERP та CRM системи стануть надійним інструментом для управління вашим відділом продажів.
+                </p>
+              </div>
+              <a class="single-blog__returne" href="/blog.html">в Блог LBS Cloud</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer"></div>
+    </div>
+    <script src="js/libs/jolty-libs.js"></script>
+  </body>
+</html>

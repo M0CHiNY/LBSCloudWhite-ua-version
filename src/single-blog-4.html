@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index HTML</title>
+  </head>
+
+  <body>
+    <div class="container-big">
+      <header class="header">
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">платформа</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">кастомізації</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
+                    </select>
+                  </div>
+                  <a class="header__btn btn" href="#down">Спробувати</a>
+                  <button class="header__btn header__btn--enter" href="#down">
+                    вхід
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn header__btn--connect" href="#down"
+                >Зв'язатися з нами</a
+              >
+              <a class="header__btn btn" href="#down">Спробувати</a>
+              <button class="header__btn header__btn--enter" href="#down">
+                вхід
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <a class="up-arrow" href="#" id="up">
+          <p>&#8593;</p>
+        </a>
+
+        <section class="single-blog">
+          <div class="container">
+            <div class="single-blog__wrap">
+              <img class="single-blog__img" src="images/blog/4.jpg" alt="" />
+              <small class="single-blog__time">Час читання: 2 хвилини</small>
+              <h1 class="single-blog__title title">
+                5 корисних порад щодо вибору та впровадження CRM і ERP систем
+              </h1>
+              <div class="single-blog__descr">
+                <p>
+                  CRM (Customer Relationship Management - Управління відносинами з клієнтами) і ERP (Enterprise Resource Planning - Планування ресурсів підприємства) системи стають все важливішими для сучасних підприємств. Вони допомагають автоматизувати бізнес-процеси, покращити взаємодію з клієнтами, оптимізувати управління ресурсами та підвищити продуктивність. Однак, вибір і впровадження таких систем можуть бути складними та вимагати уважного підходу. У цій статті ми пропонуємо п'ять корисних порад для успішного вибору та впровадження CRM і ERP систем.
+                </p>
+                
+                <ol>
+                  <li>
+                    <span>Визначте свої бізнес-потреби:</span>
+                    Перед вибором CRM або ERP системи важливо чітко визначити свої бізнес-потреби. Проведіть аналіз поточних бізнес-процесів та ідентифікуйте області, які потребують автоматизації або покращення. Встановіть цілі та очікування від системи, щоб вибрати підходящі функції та можливості. Складіть список вимог, яким повинна відповідати система, щоб вона ефективно підтримувала ваші бізнес-процеси.
+                  </li>
+                  <li>
+                    <span>Дослідіть ринок та проведіть порівняльний аналіз:</span>
+                    Існує багато CRM і ERP систем на ринку, кожна зі своїми особливостями та функціоналом. Проведіть дослідження та порівняйте різні варіанти систем, враховуючи їх функціональність, масштабованість, можливості інтеграції, безпеку даних, репутацію постачальника та цінову політику. Зверніть увагу на відгуки користувачів та консультантів, щоб отримати уявлення про переваги й недоліки кожної системи.
+                  </li>
+                  <li>
+                    <span>Зверніться до професіоналів та консультантів:</span> 
+                    При виборі та впровадженні CRM і ERP системи рекомендується звернутися до професіоналів та консультантів. Вони можуть допомогти вам з оцінкою бізнес-потреб, проведенням демонстрацій систем, а також організацією та керуванням процесом впровадження. Робота з досвідченими фахівцями допоможе знизити ризики та покращити ефективність використання системи.
+                  </li>
+                  <li>
+                    <span>Приділіть увагу навчанню та підтримці користувачів:</span> 
+                    Впровадження CRM і ERP системи потребує навчання користувачів, щоб вони могли ефективно використовувати всі можливості системи. Надайте достатньо часу для навчання та підготовки співробітників. Забезпечте належну підтримку та технічну допомогу після впровадження системи, щоб вирішувати виникаючі проблеми та відповідати на запитання користувачів.
+                  </li>
+                  <li>
+                    <span>Проведіть тестування та поетапне впровадження:</span>
+                    Перед остаточним впровадженням CRM або ERP системи рекомендується провести тестування на обмеженій групі користувачів. Це допоможе виявити можливі проблеми та покращити процес перед повним масштабуванням. Розробіть план поетапного впровадження системи, починаючи з ключових функцій і поступово розширюйте її використання за необхідності.
+                  </li>
+                </ol>
+                <p>Висновок:</p>
+                <p>
+                  CRM і ERP системи надають великий потенціал для покращення управління та розвитку бізнесу. Однак, вибір і впровадження підходящої системи вимагають уважного та свідомого підходу. Дотримуючись наведених вище порад, ви можете підвищити шанси на успішне використання CRM і ERP систем, покращити процеси в своєму підприємстві та досягти нових висот ефективності та конкурентоспроможності.
+                </p>
+              </div>
+              <a class="single-blog__returne" href="/blog.html">в Блог LBS Cloud</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer"></div>
+    </div>
+    <script src="js/libs/jolty-libs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index HTML</title>
+  </head>
+
+  <body>
+    <div class="container-big">
+      <header class="header">
+        <div class="containr-midle">
+          <div class="header__wrap">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="mob-nav" id="mob-nav">
+              <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+              <div data-ui-dialog-content class="mob-nav-content">
+                <button
+                  type="button"
+                  aria-label="Close"
+                  class="mob-nav-close"
+                  data-ui-dismiss
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <a class="header__logo header__logo--mobile" href="/">
+                  <img
+                    class="header__logo-img"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav-menu">
+                    <li><a href="/info.html">платформа</a></li>
+                    <li>
+                      <a href="#">можливості</a>
+                      <ul class="nav-submenu" id="level-1">
+                        <li>
+                          <a href="/crm.html">CRM</a>
+                        </li>
+                        <li>
+                          <a href="/integrations.html">Інтеграції</a>
+                        </li>
+                        <li>
+                          <a href="/human-resources.html">Персонал</a>
+                        </li>
+                        <li>
+                          <a href="/project-manager.html"
+                            >Завдання та проєкти</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact-center.html">Контактний центр</a>
+                        </li>
+                        <li>
+                          <a href="/website-builder.html"
+                            >Конструктор веб-сайтів</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/finance.html">Фінанси</a>
+                        </li>
+                        <li>
+                          <a href="/production.html">Виробництво</a>
+                        </li>
+                        <li>
+                          <a href="/warehouse.html">Склад</a>
+                        </li>
+                        <li>
+                          <a href="/point-of-sale.html">Точка продажу</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/prices.html">ціни</a>
+                    </li>
+                    <li>
+                      <a href="#">партнери</a>
+                    </li>
+                    <li>
+                      <a href="/customization.html">кастомізації</a>
+                    </li>
+                    <li>
+                      <a href="/blog.html">блог</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile__inner">
+                  <div class="select">
+                    <select onchange="window.location.href=this.value">
+                      <option value="https://example.com/eng">ENG</option>
+                      <option value="https://example.com/ua">UA</option>
+                    </select>
+                  </div>
+                  <a class="header__btn btn" href="#down">Спробувати</a>
+                  <button class="header__btn header__btn--enter" href="#down">
+                    вхід
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="Navigation"
+              class="mob-nav-toggler"
+              data-ui-toggle="mob-nav"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 37.47 34.09"
+                width="37.47"
+                height="34.09"
+                class="w-4.5 h-auto stroke-current"
+              >
+                <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+                <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+                <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+              </svg>
+            </button>
+            <div class="wp_inner">
+              <div class="select">
+                <select onchange="window.location.href=this.value">
+                  <option value="https://example.com/eng">ENG</option>
+                  <option value="https://example.com/ua">UA</option>
+                </select>
+              </div>
+              <a class="header__btn btn header__btn--connect" href="#down"
+                >Зв'язатися з нами</a
+              >
+              <a class="header__btn btn" href="#down">Спробувати</a>
+              <button class="header__btn header__btn--enter" href="#down">
+                вхід
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <a class="up-arrow" href="#" id="up">
+          <p>&#8593;</p>
+        </a>
+
+        <section class="single-blog">
+          <div class="container">
+            <div class="single-blog__wrap">
+              <img class="single-blog__img" src="images/blog/5.jpg" alt="" />
+              <small class="single-blog__time">Час читання: 2 хвилини</small>
+              <h1 class="single-blog__title title">
+                Все, що ви повинні знати про ERP та CRM системи
+              </h1>
+              <div class="single-blog__descr">
+                <p>
+                  В сучасному бізнес-середовищі ефективне управління клієнтськими відносинами (CRM) та планування ресурсів підприємства (ERP) стають ключовими факторами успіху для компаній будь-якого розміру та галузі. Незалежно від того, чи ви власник малого підприємства або керівник великої корпорації, знання про ці системи є важливим для розвитку вашого бізнесу. У цій статті ми розглянемо основні аспекти ERP та CRM систем, їх переваги та як вони можуть сприяти вашому успіху.
+                </p>
+                <p>
+                 Що таке ERP системи?
+                </p>
+                <p>
+                  ERP система (Enterprise Resource Planning) - це комплексне програмне забезпечення, яке об'єднує різні функції та процеси внутрішнього управління компанії. Вона включає в себе модулі для фінансів, управління запасами, логістики, виробництва, ресурсного планування та інших аспектів діяльності. ERP система надає комплексний погляд на бізнес-процеси компанії, дозволяє автоматизувати рутинні операції, оптимізувати використання ресурсів та підвищувати продуктивність.
+                </p>
+                <p>
+                  Основні переваги ERP систем:
+                </p>
+                <ol>
+                  <li>
+                    <span>Централізоване управління:</span> ERP система забезпечує одну централізовану базу даних, в якій зберігаються всі необхідні дані про компанію. Це спрощує доступ до інформації та покращує комунікацію між відділами та підрозділами.
+                  </li>
+                  <li>
+                    <span>Підвищена ефективність:</span> Автоматизація бізнес-процесів дозволяє зменшити ручну працю та помилки, що покращує ефективність роботи компанії. Впровадження ERP системи спрощує і автоматизує багато повсякденних операцій, таких як облік запасів, фінансовий облік та звітність.
+
+                  </li>
+                  <li>
+                    <span>Оптимізація ресурсів:</span> ERP система дозволяє краще планувати та використовувати ресурси компанії, такі як працівники, матеріали, обладнання та фінансові засоби. Це допомагає уникнути перевитрат та зменшити загальні витрати компанії.
+                  </li>
+                  <li>
+                    <span>Зростання продуктивності:</span> Завдяки автоматизації бізнес-процесів та покращенню доступу до інформації, співробітники можуть більше уваги приділяти стратегічним завданням та підвищувати свою продуктивність. ERP система надає можливість швидко отримувати необхідну інформацію та приймати розумні рішення.
+                  </li>
+                </ol>
+                <p>
+                  Що таке CRM системи?
+                </p>
+                <p>CRM система (Customer Relationship Management) - це програмне забезпечення, яке допомагає компаніям керувати взаєминами з клієнтами. Вона включає в себе модулі для зберігання та аналізу даних про клієнтів, ведення історії взаємодії, управління продажами, маркетингу та обслуговування клієнтів.</p>
+                <p>Основні переваги CRM систем:</p>
+                <ol>
+                  <li><span>Зберігання та управління даними про клієнтів:</span>CRM система дозволяє зберігати всю необхідну інформацію про клієнтів в одній централізованій базі даних. Це допомагає покращити взаємодію з клієнтами, вести ефективну комунікацію та надавати персоналізовану обслуговування.</li>
+                  <li><span>Покращений процес продажів:</span>CRM система надає інструменти для керування продажами, включаючи управління лідами, створення пропозицій та контроль над угодами. Вона допомагає встановлювати пріоритети, відстежувати прогрес та планувати дії для кожного потенційного клієнта.</li>
+                  <li><span>Маркетингові ініціативи:</span>CRM система дозволяє впроваджувати та відстежувати маркетингові кампанії, створювати та надсилати цільові пропозиції клієнтам. Вона надає інструменти для аналізу результатів маркетингових заходів та вдосконалення стратегій привертання нових клієнтів.</li>
+                  <li><span>Покращене обслуговування клієнтів:</span>CRM система допомагає вести історію взаємодії з клієнтами, реагувати на їх запити та проблеми швидко та ефективно. Це дозволяє підтримувати відносини з клієнтами на високому рівні та покращувати їх задоволеність.</li>
+                </ol>
+                <p>Заключення:</p>
+                <p>ERP та CRM системи є потужними інструментами для підтримки ефективного управління бізнесом та розвитку клієнтських відносин. Вони надають компаніям можливість підвищити продуктивність, покращити комунікацію, зберігати та аналізувати дані, а також ефективно керувати продажами та обслуговуванням клієнтів. Впровадження цих систем може привести до значного зростання бізнесу та досягнення конкурентних переваг. Необхідно ретельно обирати ERP та CRM систему, враховуючи свої потреби, бюджет та характеристики компанії.
+                </p>
+              </div>
+              <a class="single-blog__returne" href="/blog.html">в Блог LBS Cloud</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer"></div>
+    </div>
+    <script src="js/libs/jolty-libs.js"></script>
+  </body>
+</html>

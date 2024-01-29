@@ -25,6 +25,13 @@ const pages = [
   "production",
   "warehouse",
   "point-of-sale",
+  "single-blog-1",
+  "single-blog-2",
+  "single-blog-3",
+  "single-blog-4",
+  "single-blog-5",
+  "single-blog-6",
+  "single-blog-7",
 ]; 
 // list pages
 const environment = require("./configuration/environment");
